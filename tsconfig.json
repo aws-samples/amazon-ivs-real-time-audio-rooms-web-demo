@@ -1,0 +1,35 @@
+{
+  "extends": ["@tsconfig/vite-react"],
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": ".",
+    "checkJs": true,
+    "esModuleInterop": true,
+    "incremental": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "noErrorTruncation": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": false,
+    "noImplicitThis": true,
+    "outDir": "dist",
+    "target": "ESNext",
+    "typeRoots": ["./node_modules/@types"],
+    "paths": {
+      "@Pages": ["src/pages"],
+      "@Utils": ["src/utils/utils"],
+      "@Utils/*": ["src/utils/*.utils.ts"],
+      "@Components": ["src/components"],
+      "@Components/*": ["src/components/*"],
+      "@Api": ["src/api"],
+      "@Content": ["src/content"],
+      "@Shared/*": ["shared/*"],
+      "@Hooks": ["src/hooks"],
+      "@Constants": ["src/constants"],
+      "@Contexts/*": ["src/contexts/*"],
+      "@LocalStorage": ["src/localStorage"]
+    }
+  },
+  "include": ["src", "shared"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

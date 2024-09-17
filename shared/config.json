@@ -1,0 +1,4 @@
+{
+  "BACKEND_STACK_PREFIX": "IVSAudioWebDemoBackend",
+  "WEBSITE_STACK_PREFIX": "IVSAudioWebDemoWebsite"
+}

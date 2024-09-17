@@ -1,0 +1,15 @@
+node_modules
+coverage
+build
+dist
+	
+logs
+*.log
+*.local
+npm-debug.log*
+	
+.cdk.staging
+cdk.out
+cdk.context.json
+	
+.DS_Store

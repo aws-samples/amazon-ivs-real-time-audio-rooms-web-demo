@@ -1,0 +1,45 @@
+{
+  "name": "amazon-ivs-real-time-audio-only-web-demo-infra",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "infra": "bin/infra.ts"
+  },
+  "scripts": {
+    "build": "tsc",
+    "cdk": "cdk",
+    "bootstrap": "BOOTSTRAP=true cdk bootstrap",
+    "deploy": "cdk deploy --all",
+    "destroy": "cdk destroy"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.9",
+    "aws-cdk": "2.151.0",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.5.3",
+    "@types/aws-lambda": "^8.10.143",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/source-map-support": "^0.5.10",
+    "esbuild": "^0.23.0",
+    "tsconfig-paths": "^4.2.0",
+    "tsx": "^4.17.0"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.624.0",
+    "@aws-sdk/client-ivs-realtime": "^3.624.0",
+    "@aws-sdk/client-kms": "^3.624.0",
+    "@aws-sdk/client-secrets-manager": "^3.624.0",
+    "@aws-sdk/client-sqs": "^3.624.0",
+    "@aws-sdk/client-ssm": "^3.624.0",
+    "@aws-sdk/lib-dynamodb": "^3.624.0",
+    "@aws-sdk/util-arn-parser": "^3.568.0",
+    "@aws-sdk/util-dynamodb": "^3.624.0",
+    "aws-cdk-lib": "2.151.0",
+    "constructs": "^10.0.0",
+    "cron-parser": "^4.9.0",
+    "jsonwebtoken": "^9.0.2",
+    "nanoid": "^5.0.7",
+    "p-retry": "^6.2.0",
+    "source-map-support": "^0.5.21"
+  }
+}

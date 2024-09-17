@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ESNext",
+    "moduleResolution": "Node10",
+    "module": "ESNext",
+    "outDir": "dist",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "declaration": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": false,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "resolveJsonModule": true,
+    "typeRoots": ["./node_modules/@types"],
+    "paths": {
+      "@Shared/*": ["../shared/*"],
+      "@Lambda/*": ["lambdas/*"],
+      "@Lib/constructs": ["lib/constructs"],
+      "@Lib/policies": ["lib/policies"],
+      "@Lib/utils": ["lib/utils"],
+      "@Lib/stacks": ["lib/stacks"]
+    }
+  },
+  "files": ["../shared/types.ts", ".eslintrc.cjs"],
+  "include": ["**/*"],
+  "exclude": ["node_modules", "dist", "cdk.out"],
+  "ts-node": { "require": ["tsconfig-paths/register"] }
+}
