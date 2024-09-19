@@ -159,9 +159,11 @@ function Room() {
   });
 
   return (
-    <div>
+    <div className="h-dvh">
       <Toaster />
-      <div className={clsm(['flex', 'flex-col', 'gap-2', 'sm:gap-2.5'])}>
+      <div
+        className={clsm(['flex', 'flex-col', 'gap-2', 'sm:gap-2.5', 'h-full'])}
+      >
         <div
           className={clsm([
             'flex',
@@ -172,7 +174,7 @@ function Room() {
             'py-3',
             'sm:p-8',
             'xswh:p-2',
-            'h-[calc(100vh_-_76px)]'
+            'h-[calc(100%_-_76px)]'
           ])}
         >
           <div
