@@ -34,9 +34,7 @@ class WebsiteStack extends Stack {
   }
 
   deploy() {
-    const websiteBucket = new EnhancedS3Bucket(this, 'WebsiteBucket', {
-      bucketName: `${this.stackName}-website`
-    });
+    const websiteBucket = new EnhancedS3Bucket(this, 'WebsiteBucket', {});
 
     const oai = new cf.OriginAccessIdentity(this, 'OAI');
     websiteBucket.grantRead(oai);
