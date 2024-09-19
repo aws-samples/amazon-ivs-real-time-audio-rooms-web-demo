@@ -23,6 +23,7 @@ function ModalContent({ children }: { children: React.ReactNode }) {
       variants={SCALE_MOTION_VARIANTS}
       transition={SCALE_MOTION_TRANSITIONS}
       key="modal-motion"
+      onClick={(e) => e.stopPropagation()}
     >
       {children}
     </motion.div>
@@ -56,7 +57,8 @@ function AnimatedModal({
         'grid',
         'place-items-center',
         'transition',
-        'will-change-transform'
+        'will-change-transform',
+        'z-50'
       ])}
       contentLabel="Settings modal"
       closeTimeoutMS={150}
