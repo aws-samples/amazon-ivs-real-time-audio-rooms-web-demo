@@ -13,16 +13,16 @@
     "destroy": "cdk destroy"
   },
   "devDependencies": {
-    "@types/node": "20.14.9",
-    "aws-cdk": "2.151.0",
-    "ts-node": "^10.9.2",
-    "typescript": "~5.5.3",
     "@types/aws-lambda": "^8.10.143",
     "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "20.14.9",
     "@types/source-map-support": "^0.5.10",
+    "aws-cdk": "^2.1010.0",
     "esbuild": "^0.23.0",
+    "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
-    "tsx": "^4.17.0"
+    "tsx": "^4.17.0",
+    "typescript": "~5.5.3"
   },
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.624.0",
