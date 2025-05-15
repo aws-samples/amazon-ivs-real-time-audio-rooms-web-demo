@@ -29,7 +29,7 @@
   "dependencies": {
     "@phosphor-icons/react": "^2.1.7",
     "@tailwindcss/container-queries": "^0.1.1",
-    "amazon-ivs-web-broadcast": "^1.23.0",
+    "amazon-ivs-web-broadcast": "^1.24.0",
     "axios": "^1.8.2",
     "boring-avatars": "1.10.2",
     "copy-to-clipboard": "^3.3.3",
